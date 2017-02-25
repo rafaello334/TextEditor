@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="44.0" prefWidth="639.0" stylesheets="@style.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.FormatPaneController">
+	<children>
+		<SplitMenuButton fx:id="fontNameButton"
+			mnemonicParsing="false" prefHeight="40.0" prefWidth="203.0" text="Czcionka">
+		</SplitMenuButton>
+		<SplitMenuButton fx:id="fontSizeButton"
+			mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0">
+		</SplitMenuButton>
+		<ToggleButton id="bold-text-button" fx:id="boldTextButton"
+			mnemonicParsing="false" HBox.hgrow="ALWAYS">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Bold.jpg" />
+					</image>
+					<viewport>
+						<Rectangle2D height="30.0" width="30.0" />
+					</viewport>
+				</ImageView>
+			</graphic>
+		</ToggleButton>
+		<ToggleButton id="italic-text-button" fx:id="italicTextButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="false"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Italic.jpg" />
+					</image>
+					<viewport>
+						<Rectangle2D height="30.0" width="30.0" />
+					</viewport>
+				</ImageView>
+			</graphic>
+		</ToggleButton>
+		<ToggleButton id="underline-text-button" fx:id="underlineTextButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Underline.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+		</ToggleButton>
+		<Button id="left-alignment-button" fx:id="leftAlignmentButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../resources/Left%20Alignment.jpg" />
+					</image>
+					<viewport>
+						<Rectangle2D />
+					</viewport>
+				</ImageView>
+			</graphic>
+		</Button>
+		<Button id="center-alignment-button" fx:id="centerAlignmentButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Center%20Alignment.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+		<Button id="right-alignment-button" fx:id="rightAlignmentButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Right%20Alignment.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+		<Button id="justify-button" fx:id="justifyButton"
+			mnemonicParsing="false">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../resources/Justify.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<opaqueInsets>
+		<Insets />
+	</opaqueInsets>
+	<padding>
+		<Insets left="2.0" top="2.0" />
+	</padding>
+
+</HBox>

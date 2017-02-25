@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuPaneController">
+   <children>
+      <MenuBar id="main-menu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS">
+         <menus>
+            <Menu id="file-menu" fx:id="fileMenuButton" mnemonicParsing="false" text="Plik">
+               <items>
+                  <MenuItem fx:id="newMenuItem" mnemonicParsing="false" text="Nowy" />
+                  <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Zapisz" />
+                  <MenuItem fx:id="loadMenuItem" mnemonicParsing="false" text="Otwórz" />
+                  <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Zamknij" />
+               </items>
+            </Menu>
+            <Menu id="edit-menu" fx:id="editMenuButton" mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem fx:id="cutMenuItem" mnemonicParsing="false" text="Wytnij" />
+                  <MenuItem fx:id="copyMenuItem" mnemonicParsing="false" text="Kopiuj" />
+                  <MenuItem fx:id="pasteMenuItem" mnemonicParsing="false" text="Wklej" />
+                  <MenuItem fx:id="selectMenuItem" mnemonicParsing="false" text="Zaznacz Wszystko" />
+               </items>
+            </Menu>
+            <Menu id="about-menu" fx:id="helpMenuButton" mnemonicParsing="false" text="Pomoc">
+               <items>
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="Notatnik - Informacje" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+   <padding>
+      <Insets left="2.0" />
+   </padding>
+</HBox>

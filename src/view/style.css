@@ -1,0 +1,69 @@
+.underlined-text-area .text
+{
+  -fx-underline: true;
+}
+
+.bold-text-area
+{
+	-fx-font-weight: bold;
+}
+
+.italic-text-area
+{
+	-fx-font-style: italic;
+}
+
+.left-text-area *.text
+{
+	-fx-text-alignment: left;
+}
+
+.center-text-area *.text
+{
+	-fx-text-alignment: center;
+}
+
+.right-text-area *.text
+{
+	-fx-text-alignment: right ;
+	
+}
+
+.justify-text-area *.text
+{
+	-fx-text-alignment: justify  ;
+}
+
+#main-background
+{
+	-fx-background-color: lightgrey ;
+}
+
+#main-menu
+{
+	-fx-background-color: darkgrey;
+}
+
+#file-menu:hover,
+#edit-menu:hover,
+#about-menu:hover
+{
+	-fx-background-color: #808080;
+}
+
+#italic-text-button:hover,
+#bold-text-button:hover,
+#underline-text-button:hover
+{
+	-fx-background-color: 	#C0C0C0;
+}
+
+
+
+#left-alignment-button:hover,
+#right-alignment-button:hover,
+#justify-button:hover,
+#center-alignment-srodka-button:hover
+{
+	-fx-background-color: 	#C0C0C0;
+}
